@@ -10,6 +10,8 @@ namespace RecallApplication.Console
     {
         static void Main(string[] args)
         {
+            HomeScreen homeScreen = new HomeScreen();
+            homeScreen.Show();
         }
     }
 }
