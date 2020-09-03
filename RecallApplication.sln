@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecallApplication.Console", "RecallApplication.Console\RecallApplication.Console.csproj", "{047D2858-0829-41DB-8660-E00351AD926D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecallApplication.BusinessLayer", "RecallApplication.BusinessLayer\RecallApplication.BusinessLayer.csproj", "{A02F4E5B-8B0A-42AB-A620-04447EE23FAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecallApplication.BusinessLayer", "RecallApplication.BusinessLayer\RecallApplication.BusinessLayer.csproj", "{A02F4E5B-8B0A-42AB-A620-04447EE23FAC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecallApplication.DataAccessLayer", "RecallApplication.DataAccessLayer\RecallApplication.DataAccessLayer.csproj", "{18D14882-08EA-443C-B8EC-1DD1223C0527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A02F4E5B-8B0A-42AB-A620-04447EE23FAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A02F4E5B-8B0A-42AB-A620-04447EE23FAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A02F4E5B-8B0A-42AB-A620-04447EE23FAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D14882-08EA-443C-B8EC-1DD1223C0527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D14882-08EA-443C-B8EC-1DD1223C0527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D14882-08EA-443C-B8EC-1DD1223C0527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D14882-08EA-443C-B8EC-1DD1223C0527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
