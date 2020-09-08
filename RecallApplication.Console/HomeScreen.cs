@@ -29,7 +29,11 @@ namespace RecallApplication.Console
                     
                 }
 
-            
+                if (UserKeyAdd.Key == ConsoleKey.F1)
+                {
+                    EditCardScreen editCardScreen = new EditCardScreen();
+                    editCardScreen.Show();
+                }
 
             }
                
