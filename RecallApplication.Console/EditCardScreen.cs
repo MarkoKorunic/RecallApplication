@@ -12,7 +12,6 @@ namespace RecallApplication.Console
         public void Show()
         {
             System.Console.Clear();
-
             System.Console.WriteLine("Unesite pitanje.");
             Card card = new Card();
             card.Question = System.Console.ReadLine();
