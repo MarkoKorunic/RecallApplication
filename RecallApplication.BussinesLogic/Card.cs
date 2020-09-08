@@ -1,16 +1,15 @@
-﻿using System;
+﻿using RecallApplication.BusinessLogic;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
-namespace RecallApplication.DataAccessLayer
+namespace RecallApplication.BussinesLogic
 {
-
-    public class CardData
+    public class Card
     {
-        public CardData()
+        public Card()
         {
             Deck = new Deck() { Name = "Default" };
             DateCreated = DateTime.Now;
@@ -22,6 +21,5 @@ namespace RecallApplication.DataAccessLayer
 
         public DateTime DateCreated { get; set; }
 
-
     }
-}  
+}

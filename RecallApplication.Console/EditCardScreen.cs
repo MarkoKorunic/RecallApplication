@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RecallApplication.BusinessLayer;
+using RecallApplication.BusinessLogic;
+using RecallApplication.BussinesLogic;
 
 namespace RecallApplication.Console
 {
@@ -17,9 +18,10 @@ namespace RecallApplication.Console
             card.Question = System.Console.ReadLine();
             System.Console.WriteLine("Unesite odgovor.");
             card.Answer = System.Console.ReadLine();
-            
-
-
+            // pozvati businies layer da snimi CArd u Deck
+            Deck deck = new Deck();
+            deck.Save(card);
+            System.Console.WriteLine("Uspješno snimljena kartica.");
         }
 
 

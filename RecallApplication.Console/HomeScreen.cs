@@ -33,6 +33,7 @@ namespace RecallApplication.Console
                 {
                     EditCardScreen editCardScreen = new EditCardScreen();
                     editCardScreen.Show();
+
                 }
 
             }

@@ -9,7 +9,7 @@ namespace RecallApplication.DataAccessLayer
 {
     public class Deck
     {
-        private const string path = @"C:\RecallApp\DefaultDeck.txt";
+        private const string path = "DefaultDeck.txt";
 
 
         public Deck()
@@ -64,8 +64,10 @@ namespace RecallApplication.DataAccessLayer
                 
             }
             
-
-            //ubacit ih u svojstvo CardList
+            //na izbornik dodati opciju "pročitaj kartice", bind key na to
+            // preko console pozvat business i pozvat data access za Load metodu
+            // prikazat dosad sačuvane kartice na ekran
+            
 
         }
 

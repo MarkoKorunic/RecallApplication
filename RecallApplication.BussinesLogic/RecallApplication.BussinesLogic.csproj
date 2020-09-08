@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{047D2858-0829-41DB-8660-E00351AD926D}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>RecallApplication.Console</RootNamespace>
-    <AssemblyName>RecallApplication.Console</AssemblyName>
+    <ProjectGuid>{4C8167B7-2D64-4267-BE44-293B2A636A0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RecallApplication.BussinesLogic</RootNamespace>
+    <AssemblyName>RecallApplication.BussinesLogic</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,18 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EditCardScreen.cs" />
-    <Compile Include="HomeScreen.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Card.cs" />
+    <Compile Include="Deck.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RecallApplication.BussinesLogic\RecallApplication.BussinesLogic.csproj">
-      <Project>{4c8167b7-2d64-4267-be44-293b2a636a0d}</Project>
-      <Name>RecallApplication.BussinesLogic</Name>
+    <ProjectReference Include="..\RecallApplication.DataAccessLayer\RecallApplication.DataAccessLayer.csproj">
+      <Project>{18d14882-08ea-443c-b8ec-1dd1223c0527}</Project>
+      <Name>RecallApplication.DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
