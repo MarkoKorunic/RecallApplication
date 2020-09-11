@@ -15,7 +15,9 @@ namespace RecallApplication.Console
                 System.Console.Clear();
                 System.Console.WriteLine("IZBORNIK");
                 System.Console.WriteLine("Dodaj karticu - F1");
+                System.Console.WriteLine("Pročitaj kartice - F2");
                 System.Console.WriteLine("Kraj - F8");
+                
                 var UserKeyAdd = System.Console.ReadKey();
                 if (UserKeyAdd.Key == ConsoleKey.F8)
                 {
@@ -36,6 +38,12 @@ namespace RecallApplication.Console
 
                 }
 
+                if(UserKeyAdd.Key == ConsoleKey.F2)
+                {
+                    ReadCardScreen readCardScreen = new ReadCardScreen();
+                    readCardScreen.Show();
+
+                }
             }
                
         }

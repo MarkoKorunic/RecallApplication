@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ReadCardScreen.cs" />
     <Compile Include="EditCardScreen.cs" />
     <Compile Include="HomeScreen.cs" />
     <Compile Include="Program.cs" />
